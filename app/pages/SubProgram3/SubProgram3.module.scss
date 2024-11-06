@@ -1,0 +1,194 @@
+.SubProgram3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SubProgram3Banner {
+  position: relative;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.9;
+  }
+
+  .overlayText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color: rgb(255, 247, 247);
+    font-weight: bold;
+    //text-align: center;
+    padding: 10px;
+    background-color: rgba(194, 194, 194, 0.3);
+    border-radius: 5px;
+    width: 90%;
+    max-width: 600px;
+  }
+
+
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .overlayText {
+      top: 80%;
+      left: 20%;
+      transform: translate(-35%, -70%);
+      font-size: 2rem;
+      width: 60%;
+      max-width: 700px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .overlayText {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .overlayText {
+      font-size: 1.8rem;
+      padding: 8px;
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .overlayText {
+      font-size: 1rem;
+      padding: 6px;
+      width: 90%;
+    }
+  }
+}
+
+/* Rest of your SCSS code */
+.SubProgram3Head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #434242;
+}
+
+.SubProgram3HeadContent {
+  text-align: center;
+}
+
+.SubProgram3HeadContent h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.SubProgram3HeadContent p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+}
+
+.SubProgram3HeadBtn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.SubProgram3HeadBtn button {
+  padding: 0.75rem 2rem;
+  background-color: #162156;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.SubProgram3HeadBtn button:hover {
+  background-color: #53545e;
+}
+
+.SubProgram3Container {
+  width: 75%;
+  margin: 0 auto;
+
+  .SubProgram3Contents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .SubProgram3Content,
+  .SubProgram3Content1 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+
+  img {
+    width: 35%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .subContentText {
+    flex: 1;
+    padding: 0;
+
+    h4 {
+      padding: 0 0 20px 0;
+      font-size: 35px;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    p {
+      padding: 0 0 20px 0;
+      font-size: 18px;
+    }
+
+    ul {
+      padding: 0px 20px;
+      li {
+        list-style-type: disc;
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  .SubProgramContentBtn {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .SubProgramContentBtn button {
+    padding: 0.75rem 2rem;
+    background-color: #162156;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .SubProgramContentBtn button:hover {
+    //background-color: #0b143f;
+    background-color: #53545e;
+  }
+
+  /* Media queries for responsive behavior */
+  @media (max-width: 768px) {
+    .SubProgram3Content,
+    .SubProgram3Content1 {
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
